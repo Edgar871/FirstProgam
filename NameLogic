@@ -1,0 +1,15 @@
+package latihanformjava;
+
+import latihanformjava.Model.ModelProgam;
+
+public class NameLogic {
+    
+    public String returName(ModelProgam modelProgam){
+        if (modelProgam.getName().equals("")) {
+            return "Your name couldn't be empty!";
+        } 
+        else {
+            return "Hello, you must be " + modelProgam.getName();
+        }
+    }  
+}
