@@ -1,0 +1,13 @@
+# FirstProgam
+this project for learning and assignment
+
+//LatihanFromJava.java
+package latihanformjava;
+
+public class LatihanFormJava {
+
+public static void main(String[] args) {
+        MainFrame frame = new MainFrame();
+        frame.setVisible(true);
+    }   
+}
