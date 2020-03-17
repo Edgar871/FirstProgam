@@ -1,0 +1,49 @@
+package latihanformjava;
+
+import latihanformjava.Function.NameLogic;
+import latihanformjava.Model.ModelProgam;
+
+public class MainFrame extends javax.swing.JFrame {
+
+    public MainFrame() {
+        initComponents();
+    }
+    @SuppressWarnings("unchecked")
+    Generated Code
+    
+        private void btn_submitActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        
+        String name = tf_name.getText();
+        
+        ModelProgam mp = new ModelProgam();
+        mp.setName(name);
+        
+        NameLogic logic = new NameLogic();
+        String result = logic.returName(mp);
+        
+        NameLogic logic1 = new NameLogic();
+        String result1 = logic1.returName(mp);
+        
+        if (tf_name.getText().length()==0){
+        label_result.setText(result1);
+        }
+        else{
+            label_result.setText(result);
+        }
+    }
+        
+        public static void main(String args[]) {
+                java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                
+                new MainFrame().setVisible(true);
+            }
+        });
+    }
+    // Variables declaration - do not modify                     
+    private javax.swing.JButton btn_submit;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel label_result;
+    private javax.swing.JTextField tf_name;
+    // End of variables declaration                   
+}
